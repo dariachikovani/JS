@@ -158,3 +158,35 @@ checkAge (61)
 chekcAge (18)
 
 
+
+
+//3**:
+//Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
+
+let age_1 = 17;
+let age_2 = 18;
+let age_3 = 61;
+
+function chekcAge(age){
+
+    age = Number(age)
+
+    if (!isNaN(age)) 
+          if (age < age_2) {
+            console.log("You dont have access cause your age is " + age + " Its less then")
+        } else if(age >= age_2 && age < age_3) {
+            console.log("Welcome!")  
+        } else if(age > age_3) {
+            console.log("Keep calm and look Culture channel")
+        } else {
+            console.log("Technical work")
+        }
+
+    
+    else{
+       console.log("Error! Value age = " + typeof age + " please write number value.")
+   } 
+
+}
+
+chekcAge("18")
